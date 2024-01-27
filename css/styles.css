@@ -46,6 +46,11 @@ section {
     fill: #f4f4fd;
 }
 
+.icon-size {
+    width: 40px;
+    height: 40px;
+}
+
 /* Header */
 
 .box-head {
@@ -453,8 +458,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
     border-radius: 50%;
     background-color: #4D5AE5;
     padding: 8px;
