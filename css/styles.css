@@ -43,6 +43,7 @@ section {
 }
 
 /* Header */
+
 .box-head {
     justify-content: center;
     display: flex;
@@ -88,6 +89,7 @@ section {
 }
 
 .nav-link {
+    display: block;
     color: #2E2F42;
     font-size: 16px;
     font-weight: 500;
@@ -97,20 +99,31 @@ section {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
+.studio {
+    position: relative;
+    color: #404bbf;
+}
+
 .nav-link:hover,
-.nav-link:focus {
+.nav-link:focus,
+.nav-link:active {
     color: #404BBF;
 }
 
-.studio:active::after {
-    content: "";
-    display: block;
-    width: 48px;
-    height: 4px;
-    background-color: #404BBF;
-    border-radius: 2px;
+.studio::after {
     position: absolute;
-    margin-top: 20px;
+    left: 0;
+    bottom: -1px;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404bbf;
+}
+
+.nav-link:hover::after {
+    background-color: #404bbf;
 }
 
 .contacts {
@@ -134,6 +147,7 @@ section {
 /* Main */
 
 /* section title */
+
 .box-title {
     background: #2E2F42;
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
@@ -184,6 +198,7 @@ section {
 }
 
 /* section skills */
+
 .icon {
     margin: 24px 100px;
 }
@@ -234,7 +249,9 @@ section {
 }
 
 /* section team */
-.social {
+
+.socnet {
+    display: inline-block;
     border-radius: 50%;
     background-color: #4D5AE5;
     width: 40px;
@@ -243,7 +260,7 @@ section {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
-.socnet-box {
+.social-box {
     display: flex;
     gap: 24px;
     justify-content: center;
@@ -273,10 +290,11 @@ section {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     flex-basis: calc((100% - 72px) / 4);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.photo-box .social:hover,
-.photo-box .social:focus {
+.photo-box .socnet:hover,
+.photo-box .socnet:focus {
     background-color: #404BBF;
 }
 
@@ -303,6 +321,7 @@ section {
 }
 
 /* section portfolio */
+
 .tools {
     color: #2E2F42;
     font-size: 20px;
@@ -326,7 +345,6 @@ section {
 }
 
 .tools-res {
-    padding: 0px 16px;
     padding: 32px 16px;
     border-bottom: 1px solid #E7E9FC;
     border-right: 1px solid #E7E9FC;
@@ -367,6 +385,7 @@ section {
 }
 
 /* Footer */
+
 .box-foot {
     background: #2E2F42;
     padding: 100px 0;
@@ -409,13 +428,21 @@ section {
 
 .footer-list {
     display: flex;
-    gap: 24px;
+    gap: 16px;
     justify-content: center;
 }
 
-.footer-list .social:hover,
-.footer-list .social:focus {
+.footer-list .footer-social:hover,
+.footer-list .footer-social:focus {
     background-color: #31D0AA;
 }
 
-/* ВИПРАВИТЬ ФУТЕР та студіо*/
+.footer-social {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    padding: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
