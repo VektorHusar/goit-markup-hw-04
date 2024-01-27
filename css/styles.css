@@ -42,12 +42,17 @@ section {
     padding-bottom: 120px;
 }
 
+.svg-fill {
+    fill: #f4f4fd;
+}
+
 /* Header */
 
 .box-head {
     justify-content: center;
     display: flex;
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .box-head .container {
@@ -204,6 +209,10 @@ section {
 }
 
 .icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
     border-radius: 4px;
     border: 1px solid #8E8F99;
     background: #F4F4FD;
@@ -251,7 +260,9 @@ section {
 /* section team */
 
 .socnet {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     background-color: #4D5AE5;
     width: 40px;
@@ -394,6 +405,7 @@ section {
 .footer-box {
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
 }
 
 .foot-logo-part {
@@ -422,8 +434,8 @@ section {
     margin-bottom: 16px;
 }
 
-.footer-box-second {
-    margin-left: 120px;
+.footer-box-first {
+    margin-right: 120px;
 }
 
 .footer-list {
@@ -438,7 +450,9 @@ section {
 }
 
 .footer-social {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
     border-radius: 50%;
