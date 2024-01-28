@@ -209,10 +209,6 @@ section {
 
 /* section skills */
 
-.icon {
-    margin: 24px 100px;
-}
-
 .icon-box {
     display: flex;
     align-items: center;
